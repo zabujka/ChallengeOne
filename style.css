@@ -1,0 +1,38 @@
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background: url(images/bg-mobile.png) no-repeat;
+      background-size: auto;
+      background-size: cover;
+
+    }
+
+
+    /*@media v landscape (min-width: 376px) {
+      body {
+        background: url(images/bg-mobile.png);
+        background-size: auto;
+        background-size: cover;
+      }
+    }
+
+    @media screen desktop (min-width: 1440px) {
+      body {
+        background: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+      }
+    }*/
+  
