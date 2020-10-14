@@ -2,37 +2,57 @@
       margin: 0;
       padding: 0;
       font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      box-sizing: border-box;
+      --Pale-Blue:hsl(243, 100%, 93%);
+      --Grayish-Blue:hsl(229, 7%, 55%);
+      --Dark-Blue:hsl(228, 56%, 26%);
+      --Very-Dark-Blue:hsl(229, 57%, 11%);
+    }
+
+ 
+    body {
+      background: url(images/bg-mobile.png) no-repeat;
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    section {
+        width: 80%;
+        background-color: var(--Dark-Blue);
+    }
+
+    section.one {
+
+        height: 30%;
+        position: fixed;
+        border-radius: 10px 100px 10px 10px;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    section.two {
+
+        height: 25%;
+        position: fixed;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px 10px 10px 10px;
     }
 
     .attribution {
-      font-size: 11px;
-      text-align: center;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 11px;
+        text-align: center;
     }
 
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-
-    body {
-      background: url(images/bg-mobile.png) no-repeat;
-      background-size: auto;
-      background-size: cover;
-
-    }
-
-
-    /*@media v landscape (min-width: 376px) {
-      body {
-        background: url(images/bg-mobile.png);
-        background-size: auto;
-        background-size: cover;
-      }
-    }
-
-    @media screen desktop (min-width: 1440px) {
-      body {
-        background: url(images/bg-desktop.png);
-        background-repeat: no-repeat;
-      }
-    }*/
-  
