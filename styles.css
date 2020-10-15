@@ -31,13 +31,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
     
    }
  .icons {
      display: block;
     height: 25vh;
     background-color:#1e2c69;
-    border-radius: 15px 100px 15px 15px;
+    border-radius: 8px 100px 8px 8px;
     width: 23vw;
     box-shadow: 0px 5px 12px 3px rgba(0,0, 0, .2);
     box-sizing: border-box;
@@ -50,7 +51,7 @@
     background-color: #1e2c69;
     height: 21vh;
     width: 35vw;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 8px;
     padding: .5em;
     box-sizing: border-box;
     box-shadow: -15px 15px 20px 3px rgba(0, 0, 0, .2);
@@ -72,10 +73,13 @@
       height: 3.5em;
       background-color: rgba(12,18,44, .6); 
       margin: .6em;
-      border-radius: 10px;
+      border-radius: 8px;
       margin-top: 2em;
       box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
-      
+      display: flex;
+         justify-content: center;
+         align-items: center;
+               
       
       
      }
@@ -86,10 +90,8 @@
 
      
      .icon_container img {
+         transform: scale(1.4);
          
-         display: block;
-         margin: 0 auto;
-               
      }
 
 .information_usage {
@@ -97,11 +99,12 @@
     margin-top: 2em;
     font-size: 1.2em;
     color: #Cdd4ff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 50;
+    font-family: sans-serif;
+    
     padding: .6em;
     text-align: left;
     padding-left: 0px;
+    font-size: 1.1em;
 
 }
 
@@ -118,7 +121,6 @@
      
 .line {
     background-color: rgba(12, 18, 44, .6);
-    
     width: 30vw;
     height: 24px;
     border-radius: 25px;
@@ -127,7 +129,7 @@
 }
 
 .line-inside {
-    width: 81%;
+    width: 80%;
     height: 100%;
     background: linear-gradient(90deg, #f6a297, #fa4c91);
     box-sizing: border-box;
@@ -147,4 +149,29 @@
     top: 2px;
     right: 2px;
     
+}
+
+.line_scale {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    justify-content: space-between;
+    margin-top: .5em;
+    box-sizing: border-box;
+    color: #Cdd4ff;
+    font-family: sans-serif;
+    font-size: .9em;
+    
+}
+
+.cloud {
+    background-color: white;
+    width: 180px;
+    height: 80px;
+    border-radius: 8px 8px 0px 8px;
+    box-sizing: border-box;
+    padding: .5em;
+    position: relative;
+    left: 22vw;
+    top: 3vh;
 }
